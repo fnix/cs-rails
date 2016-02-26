@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = CsRails::VERSION
   s.authors     = ["Kadu Diógenes"]
   s.email       = ["kadu.diogenes@fnix.com.br"]
-  s.homepage    = "https://github.com/fnix/cs_rails"
+  s.homepage    = "https://github.com/fnix/cs-rails"
   s.summary     = "Not Counter-Strike, country and states for Rails."
   s.description = "Country and state selects for Rails, inspired by carmen-rails."
   s.license     = "MIT"
