@@ -28,6 +28,12 @@ It will replace the contents for any select/input that have an id ending with "_
 = f_address.input :country, priority: ['BR', 'AR', 'CL', 'PY', 'UY'], input_html: { data: { cs_rails: true, state_input_id: 'target_input_id' } }
 ```
 
+Sometimes you need to set the country input data with `$('#country_input_id').val(some_var)`, in these cases you need to trigger a 'change' event and you can pass a callback to execute after the states load:
+
+```coffeescript
+$('select[id$=country]').val(some_var).trigger('change', fillState)
+```
+
 For now, it's all!
 
 This project rocks and uses MIT-LICENSE.

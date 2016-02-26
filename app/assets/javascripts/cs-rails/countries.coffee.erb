@@ -1,7 +1,9 @@
 $(document).on 'page:change', ->
-  $('select[data-cs-rails]').change (event) ->
+  $('select[data-cs-rails]').change (event, callback) ->
     $.get "<%= CsRails::Engine.routes.url_helpers.states_index_path %>",
       { 
         country_code: $(@).val()
         state_input_id: $(@).data('state-input-id')
       }, null, 'script'
+    .done ->
+      callback() if callback
