@@ -16,12 +16,12 @@ Gem::Specification.new do |s|
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
 
-  s.add_dependency "rails", "~> 4.2.5"
+  s.add_dependency "rails", "~> 4.2"
   
-  s.add_runtime_dependency "coffee-rails"
-  s.add_runtime_dependency "countries"
+  s.add_runtime_dependency "coffee-rails", "~> 4.1"
+  s.add_runtime_dependency "countries", "~> 1.2"
   
-  s.add_development_dependency "pg"
-  s.add_development_dependency "haml-rails"
-  s.add_development_dependency "rspec-rails"
+  s.add_development_dependency "pg", "~> 0.18"
+  s.add_development_dependency "haml-rails", "~> 0.9"
+  s.add_development_dependency "rspec-rails", "~> 3.4"
 end
