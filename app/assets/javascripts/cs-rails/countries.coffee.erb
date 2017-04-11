@@ -1,4 +1,4 @@
-$(document).on 'page:change', ->
+$(document).on 'turbolinks:load', ->
   $('select[data-cs-rails]').change (event, callback) ->
     $.get "<%= CsRails::Engine.routes.url_helpers.states_index_path %>",
       { 
